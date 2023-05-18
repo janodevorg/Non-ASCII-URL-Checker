@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Non-ASCII Character URL Checker",
+  "version": "1.0",
+  "description": "This extension alerts the user if the current URL contains non-ASCII characters.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/network-badge-gray-16.png",
+      "48": "images/network-badge-gray-48.png",
+      "128": "images/network-badge-gray-128.png"
+    }
+  },
+  "icons": {
+    "16": "images/network-badge-gray-16.png",
+    "48": "images/network-badge-gray-48.png",
+    "128": "images/network-badge-gray-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
