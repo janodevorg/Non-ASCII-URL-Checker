@@ -1,8 +1,6 @@
 ## Non-ASCII URL Checker
 
-This Chrome extension monitors your browsing and overlays an alert when the current URL includes non-ASCII characters.
-
-Its primary function is to act as a defense against a malicious tactic known as an [IDN Homograph Attack](https://en.wikipedia.org/wiki/IDN_homograph_attack), which misleads users about the website they're accessing.
+This Chrome extension monitors your browsing and overlays an alert when the current URL includes non-ASCII characters. Its primary function is to act as a defense against a malicious tactic known as an [IDN Homograph Attack](https://en.wikipedia.org/wiki/IDN_homograph_attack), which misleads users about the website they're accessing.
 
 To install it 
 
@@ -11,7 +9,8 @@ To install it
 
 If you try to load a screen containing non-ASCII Unicode string you’ll see an overlay like this:
 
-![](screenshot.png)
+<img src="screenshot.png" width="400" />
+
 There are several kinds of misleading trickery you can do with Unicode domains:
 
 - https://iṅg.com instead of the real bank ingdirect.com –I got one of these in the mail.
