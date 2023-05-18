@@ -27,10 +27,5 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ],
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "<all_urls>"
   ]
 }

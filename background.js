@@ -11,13 +11,3 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     chrome.action.setBadgeBackgroundColor({color: '#FF0000', tabId: sender.tab.id});
   }
 });
-
-chrome.webRequest.onBeforeRequest.addListener(
-  function(details) {
-    if (!isASCII(details.url)) {
-      return {cancel: true};
-    }
-  },
-  {urls: ["<all_urls>"]},
-  ["blocking"]
-);
